@@ -1,0 +1,22 @@
+{
+  "name": "redux-store-mixin",
+  "version": "1.0.0",
+  "description": "Mixin for integrate action creators in methods of vue component",
+  "main": "redux-store-mixin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kolesoffac/redux-store-mixin.git"
+  },
+  "keywords": [
+    "vue",
+    "mixin",
+    "redux"
+  ],
+  "dependencies": {
+  },
+  "author": "Anatoly Kolesov <kolesoffac@gmail.com>",
+  "license": "MIT"
+}
