@@ -2,9 +2,11 @@
   "name": "redux-store-mixin",
   "version": "1.0.0",
   "description": "Mixin for integrate action creators in methods of vue component",
-  "main": "redux-store-mixin.js",
+  "main": "redux-store-mixin.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "echo \"Run build...\" && rollup -c && echo \"Finish build...\"",
+    "build-production": "echo \"Run build prod...\" && NODE_ENV=production rollup -c && echo \"Finish build...\"",
+    "build-all": "npm-run-all --parallel build build-production"
   },
   "repository": {
     "type": "git",
@@ -16,6 +18,15 @@
     "redux"
   ],
   "dependencies": {
+    "babel-plugin-syntax-trailing-function-commas": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "npm-run-all": "^4.1.1",
+    "rollup": "^0.37.2",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-progress": "^0.4.0",
+    "rollup-plugin-uglify-es": "^0.0.1",
+    "rollup-watch": "^2.5.0"
   },
   "author": "Anatoly Kolesov <kolesoffac@gmail.com>",
   "license": "MIT"
