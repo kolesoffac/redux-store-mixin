@@ -1,5 +1,4 @@
 # redux-store-mixin
-------------
 
 [![npm downloads](https://img.shields.io/npm/dm/redux-store-mixin.svg?style=flat-square)](https://www.npmjs.com/package/redux-store-mixin)
 [![npm version](https://img.shields.io/npm/v/redux-store-mixin.svg?style=flat-square)](https://www.npmjs.com/package/redux-store-mixin)
