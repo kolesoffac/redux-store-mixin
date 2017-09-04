@@ -2,7 +2,7 @@
   "name": "redux-store-mixin",
   "version": "1.0.0",
   "description": "Mixin for integrate action creators in methods of vue component",
-  "main": "redux-store-mixin.min.js",
+  "main": "build/redux-store-mixin.min.js",
   "scripts": {
     "build": "echo \"Run build...\" && rollup -c && echo \"Finish build...\"",
     "build-production": "echo \"Run build prod...\" && NODE_ENV=production rollup -c && echo \"Finish build...\"",
