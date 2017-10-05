@@ -3,7 +3,7 @@ export default function getReduxStoreMixin(actionCreators) {
 
 	for (let method in actionCreators) {
 		methodsRedux[method] = function() {
-			this.$store.dispatch(actionCreators[method](...arguments));
+			return this.$store.dispatch(actionCreators[method](...arguments));
 		}
 	};
 
@@ -14,7 +14,7 @@ export default function getReduxStoreMixin(actionCreators) {
 				[, ...newArgs] = arguments,
 				newArgs2 = [this, ...newArgs];
 
-				methodsRedux[name].call(...newArgs2);
+				return methodsRedux[name].call(...newArgs2);
 			},
 		}
 	};
