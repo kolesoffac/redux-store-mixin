@@ -19,7 +19,7 @@ function getReduxStoreMixin(actionCreators) {
 
 	var _loop = function _loop(method) {
 		methodsRedux[method] = function () {
-			this.$store.dispatch(actionCreators[method].apply(actionCreators, arguments));
+			return this.$store.dispatch(actionCreators[method].apply(actionCreators, arguments));
 		};
 	};
 
@@ -38,7 +38,7 @@ function getReduxStoreMixin(actionCreators) {
 				    newArgs2 = [this].concat(toConsumableArray(newArgs));
 
 
-				(_methodsRedux$name = methodsRedux[name]).call.apply(_methodsRedux$name, newArgs2);
+				return (_methodsRedux$name = methodsRedux[name]).call.apply(_methodsRedux$name, newArgs2);
 			}
 		}
 	};
