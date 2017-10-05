@@ -1,6 +1,6 @@
 {
   "name": "redux-store-mixin",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Mixin for integrate action creators in methods of vue component",
   "main": "build/redux-store-mixin.min.js",
   "scripts": {
